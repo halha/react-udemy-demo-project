@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import classes from "./BurgerIngredient.module.css";
 
-class BurgerIngridient extends Component {
+export class BurgerIngridient extends Component {
     render() {
         let ingredient = null;
 
