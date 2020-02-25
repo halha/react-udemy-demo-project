@@ -30,7 +30,6 @@ export class BurgerBuilder extends Component {
             .reduce((sum, el) => {
                 return sum + el;
             }, 0);
-
         this.setState({ purchaseable: sum > 0 });
     };
 
@@ -49,7 +48,6 @@ export class BurgerBuilder extends Component {
             totalPrice: newPrice,
             ingredients: updatedIngredients
         });
-
         this._UpdatePurchaseState(updatedIngredients);
     };
 
@@ -71,6 +69,7 @@ export class BurgerBuilder extends Component {
             totalPrice: newPrice,
             ingredients: updatedIngredients
         });
+        this._UpdatePurchaseState(updatedIngredients);
     };
     // { salad: true, meat: false, ...}
 
