@@ -1,0 +1,5 @@
+// If you clone this project, don't forget to remove this message
+// and change this file name to .env
+// Enjoy :)
+
+REACT_APP_BASE_URL = // your base url link
