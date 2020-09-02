@@ -1,28 +1,15 @@
-import React, { Component } from "react";
-import Layout from "./hoc/Layout/Layout";
-import BurgerBuilder from "./Containers/BurgerBuilder/BurgerBuilder";
+import React, { Component } from 'react';
 
-export class App extends Component {
-    // state = {
-    //     show: true
-    // };
+import Blog from './containers/Blog/Blog';
 
-    // componentDidMount() {
-    //     setInterval(() => {
-    //         this.setState({ show: false });
-    //     }, 5000);
-    // }
-
-    render() {
-        return (
-            <div>
-                <Layout>
-                    {/* {this.state.show ? <BurgerBuilder /> : null} */}
-                    <BurgerBuilder />
-                </Layout>
-            </div>
-        );
-    }
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Blog />
+      </div>
+    );
+  }
 }
 
 export default App;
